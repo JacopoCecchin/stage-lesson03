@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Lezione3.GridPage"
+             BackgroundColor="Red"
+             Title="GRID">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height ="100"/>
+                <RowDefinition Height ="100"/>
+                <RowDefinition Height ="100"/>
+                <RowDefinition Height ="100"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width ="100"/>
+                <ColumnDefinition Width ="100"/>
+                <ColumnDefinition Width ="100"/>
+            </Grid.ColumnDefinitions>
+
+            <BoxView Grid.Row="2" Grid.Column="1" BackgroundColor="Aquamarine" />
+            <BoxView Grid.Row="0" Grid.Column="2" BackgroundColor="Orange" />
+            
+            <Button
+                x:Name="Test1"
+                Text="Test 1"
+                Grid.Column="1"
+                Grid.Row="2"
+                Clicked="Test1_Clicked"
+                />
+            
+            <Button
+                x:Name="Test2"
+                Text="Test 2"
+                Grid.Column="2"
+                Grid.Row="0"
+                Clicked="Test2_Clicked"
+                />
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

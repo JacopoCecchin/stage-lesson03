@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Lezione3"
+             x:Class="Lezione3.MainPage"
+             Title="HOME">
+
+    <StackLayout>
+        <Button
+            x:Name="StackLayout"
+            Text="StackLayout"
+            HorizontalOptions="Center"
+            VerticalOptions="Start"
+            Clicked="StackLayout_Clicked"/>
+        <Button
+            x:Name="Grid"
+            Text="Grid"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            Clicked="Grid_Clicked"/>
+        <Button
+            x:Name="FlexLayout"
+            Text="Flex layout"
+            HorizontalOptions="Center"
+            VerticalOptions="End"
+            Clicked="FlexLayout_Clicked"/>
+        
+    </StackLayout>
+
+</ContentPage>
